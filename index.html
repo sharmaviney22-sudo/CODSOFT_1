@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viney Sharma | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle">Switch to Dark Mode</button>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Viney Sharma</h1>
+    <p>B.Tech in Computer Science and Engineering</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="./vinay img.jpeg" alt="Viney Sharma" class="profile-photo" />
+    <p>
+      Hi! I'm Viney Sharma, a Computer Science graduate passionate about technology, development, and innovation. 
+      I specialize in building responsive web apps and love solving real-world problems through code.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Git & GitHub</li>
+      <li>Python</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <img src="project1.jpg" alt="Project 1 Screenshot" />
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio to showcase my projects, skills, and resume.</p>
+    </div>
+
+    <div class="project">
+      <img src="project2.jpg" alt="Project 2 Screenshot" />
+      <h3>Weather App</h3>
+      <p>A weather forecasting web app using JavaScript and OpenWeatherMap API.</p>
+    </div>
+
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Download my resume <a href="Viney-Sharma-Resume.pdf" target="_blank">here</a>.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:viney.sharma@example.com">viney.sharma@example.com</a></p>
+    <p>Phone: +91 9876543210</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Viney Sharma. All rights reserved.</p>
+  </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-theme');
+      toggleBtn.textContent = body.classList.contains('dark-theme')
+        ? 'Switch to Light Mode'
+        : 'Switch to Dark Mode';
+    });
+  </script>
+
+</body>
+</html>
